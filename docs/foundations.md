@@ -95,8 +95,11 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 | MuJoCo：[CPU 批量](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/cpu-batching.md) → [MJX 与设备](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/mjx-and-device-data.md) → [学习与随机化](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/learning-and-randomization.md) → [记录与回放](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/recording-and-replay.md) | 每个 worker 的 Data 怎样初始化？JAX/Warp 的状态和容量有何差异？state mask 没有保存什么？ |
 | SuperDex：[批量、学习与数据](https://github.com/huangkiki/superdex-atlas/blob/main/docs/batch-learning-data.md) | 两层 vector 如何传递 seed 和 reset？共享 Scene 的延迟读取属于哪个环境？诊断 JSON 能恢复状态吗？ |
 | Genesis：[批量、学习与数据](https://github.com/huangkiki/genesis-atlas/blob/main/docs/batch-learning-data.md) | 局部 reset 改变哪些时钟？官方 Go2 环境何时覆盖终态？记录器和轨迹回放分别拥有哪些数据？ |
+| Newton Physics：[批量、学习与数据](https://github.com/huangkiki/newton-atlas/blob/main/docs/batch-learning-data.md) | 多 world 如何分段和重置？策略循环的实际推进时间是什么？ViewerFile 保存了什么、没有保存什么？ |
+| PhysX：[批量、学习与数据](https://github.com/huangkiki/physx-atlas/blob/main/docs/batch-learning-data.md) | Scene 隔离与 Direct GPU 布局/事件怎样配合？重置应清哪些输入？序列化对象与 backing memory 由谁释放？ |
+| Drake：[环境生命周期](https://github.com/huangkiki/drake-atlas/blob/main/docs/batch-lifecycle.md) → [随机化与学习](https://github.com/huangkiki/drake-atlas/blob/main/docs/randomness-learning.md) → [日志与回放](https://github.com/huangkiki/drake-atlas/blob/main/docs/data-replay.md) | Context、Simulator 和外部资源怎样隔离？Python MonteCarlo 是否并行？logger 的时间和 trajectory 的有效域如何解释？ |
 
-Newton、PhysX 和 Drake 的 E5 仍在开发；特色扩展继续由 E6 展开。这些章节建立原生机制与数据契约，没有训练、性能测量或跨后端重现结果。
+六仓 E5 均已发布；特色扩展继续由 E6 展开。这些章节建立原生机制与数据契约，没有训练、性能测量或跨后端重现结果。
 
 ## 到各引擎继续
 
