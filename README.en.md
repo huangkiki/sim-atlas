@@ -17,7 +17,7 @@ Sim Atlas is an independent community learning series for **MuJoCo, SuperDex, Ge
 | Objects and setup, modeling, state and time, control, robotics, sensing, batching and data. | Dynamics and data structures, stepping, contact, solvers, integration, force observation and extensions. |
 | Start with programming basics and use the shared concept map as needed. | Start with linear algebra and rigid-body mechanics, after the engine's A0–A4 foundations. |
 
-Both tracks are fully planned. E0 introductions, E1 modeling/state/time and E2 control/robotics/task-interface lessons are published in Chinese for all six engines; E3 contact/solver/force-observation lessons are also published for MuJoCo, SuperDex and Genesis. E3 for the remaining engines and E4–E7 for all engines remain in development. Planning, source review, syntax checks and executed validation have distinct statuses.
+Both tracks are fully planned. E0 introductions, E1 modeling/state/time and E2 control/robotics/task-interface lessons are published in Chinese for all six engines; E3 contact/solver/force-observation lessons are also published for all six engines. E4–E7 remain in development. Planning, source review, syntax checks and executed validation have distinct statuses.
 
 ## Choose an engine
 
@@ -26,9 +26,9 @@ Both tracks are fully planned. E0 introductions, E1 modeling/state/time and E2 c
 | [MuJoCo Atlas](https://github.com/huangkiki/mujoco-atlas) | MJCF, model/data ownership, actuation, constraints and integration | E0–E3 · [Contact and solvers](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/dynamics-and-pipeline.md) |
 | [SuperDex Atlas](https://github.com/huangkiki/superdex-atlas) | Physics/Robotics boundaries, Scene/Actor, contact geometry and implicit solving | E0–E3 · [Contact and solvers](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) |
 | [Genesis Atlas](https://github.com/huangkiki/genesis-atlas) | Scene/Entity, multiphysics, batched state and differentiability boundaries | E0–E3 · [Contact and solvers](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) |
-| [Newton Atlas](https://github.com/huangkiki/newton-atlas) | ModelBuilder/State/Control, Warp arrays and solver-specific support | E0–E2 · [Control and robotics](https://github.com/huangkiki/newton-atlas/blob/main/docs/control-robotics-tasks.md) |
-| [PhysX Atlas](https://github.com/huangkiki/physx-atlas) | Native C++ SDK, articulations, PGS/TGS and host integrations | E0–E2 · [Control and robotics](https://github.com/huangkiki/physx-atlas/blob/main/docs/control-robotics.md) |
-| [Drake Atlas](https://github.com/huangkiki/drake-atlas) | Systems/Diagram/Context, MultibodyPlant, SceneGraph, contact and optimization | E0–E2 · [Control and robotics](https://github.com/huangkiki/drake-atlas/blob/main/docs/control-robotics.md) |
+| [Newton Atlas](https://github.com/huangkiki/newton-atlas) | ModelBuilder/State/Control, Warp arrays and solver-specific support | E0–E3 · [Contact and solvers](https://github.com/huangkiki/newton-atlas/blob/main/docs/contact-solvers-forces.md) |
+| [PhysX Atlas](https://github.com/huangkiki/physx-atlas) | Native C++ SDK, articulations, PGS/TGS and host integrations | E0–E3 · [Contact and solvers](https://github.com/huangkiki/physx-atlas/blob/main/docs/contact-solvers.md) |
+| [Drake Atlas](https://github.com/huangkiki/drake-atlas) | Systems/Diagram/Context, MultibodyPlant, SceneGraph, contact and optimization | E0–E3 · [Contact and solvers](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-models.md) |
 
 Read [the learning paths](docs/learning-paths.md) for the complete unit map and [the foundations](docs/foundations.md) for shared questions about frames, inertia, state, time, contact and observations. Detailed content is currently Chinese; this English entry reports the same scope.
 

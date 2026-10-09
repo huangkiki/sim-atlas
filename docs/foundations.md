@@ -62,12 +62,16 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 
 已发布的深入阅读：
 
-| 从哪个问题进入 | MuJoCo | SuperDex | Genesis |
-|---|---|---|---|
-| 一步动力学和数值迭代 | [流水线](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/dynamics-and-pipeline.md) · [求解与积分](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/solvers-and-integration.md) | [隐式积分与求解](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) | [约束求解与积分](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) |
-| 材料组合与力的读回 | [接触模型](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/contact-models.md) · [力观测](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/force-observations.md) | [接触、材料与 query](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) | [接触、材料与采样](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) |
+| 引擎 | 动力学与数值迭代 | 材料与力观测 |
+|---|---|---|
+| MuJoCo | [流水线](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/dynamics-and-pipeline.md) · [求解与积分](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/solvers-and-integration.md) | [接触模型](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/contact-models.md) · [力观测](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/force-observations.md) |
+| SuperDex | [隐式积分与求解](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) | [接触、材料与 query](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) |
+| Genesis | [约束求解与积分](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) | [接触、材料与采样](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) |
+| Newton Physics | [XPBD 与后端分支](https://github.com/huangkiki/newton-atlas/blob/main/docs/contact-solvers-forces.md) | [材料、wrench 与读回缺项](https://github.com/huangkiki/newton-atlas/blob/main/docs/contact-solvers-forces.md) |
+| PhysX | [CPU PGS/TGS 与积分](https://github.com/huangkiki/physx-atlas/blob/main/docs/contact-solvers.md) | [材料、法向点与切向 anchor](https://github.com/huangkiki/physx-atlas/blob/main/docs/contact-solvers.md) |
+| Drake | [动力学装配与 SAP](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-solvers.md) | [几何材料](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-models.md) · [力与采样](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-observation.md) |
 
-Newton Physics、PhysX、Drake 的对应 E3 专题仍在开发；六仓目录持续记录各自进度。以上链接用于对照原生机制，不能组成性能或物理准确性排名。
+六仓 E3 专题均已发布，后续传感、数据与扩展专题仍按各仓目录推进。以上链接用于对照原生机制，不能组成性能或物理准确性排名。
 
 ## 到各引擎继续
 
