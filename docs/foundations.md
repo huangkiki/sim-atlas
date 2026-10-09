@@ -82,7 +82,21 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 - **PhysX：**[传感、场景查询与调试显示](https://github.com/huangkiki/physx-atlas/blob/main/docs/sensors-rendering.md)。理解过滤、最近命中与多命中完整性，再区分力和加速度、调试图元以及宿主图像管线。
 - **Drake：**[相机与渲染](https://github.com/huangkiki/drake-atlas/blob/main/docs/sensors-rendering.md) → [采样与延迟](https://github.com/huangkiki/drake-atlas/blob/main/docs/sensor-timing.md) → [惯性与力传感](https://github.com/huangkiki/drake-atlas/blob/main/docs/inertial-force-sensing.md)。沿系统端口追踪图像、捕获位姿和时间，再核对动力学输入的采样阶段。
 
-阅读任务：为一项观测分别写下产生者、采样时间、坐标、单位、shape 和无效值，再解释为何一个 RGB 图像、接触力数组和当前关节状态可能并非同一时刻的观测。批量与学习、数据和特色扩展专题仍按各仓目录推进；已有示例仅做源码与静态检查。
+阅读任务：为一项观测分别写下产生者、采样时间、坐标、单位、shape 和无效值，再解释为何一个 RGB 图像、接触力数组和当前关节状态可能并非同一时刻的观测。已有示例仅做源码与静态检查。
+
+## 7. 批量、学习接口与数据归属 · A8 / A9 / B6
+
+批量轴表示多个逻辑世界。执行它们的 CPU worker、设备线程和进程是调度资源，未必与世界一一对应。共享模型、复用工作区或共享一个 Scene 时，应分别检查哪些状态在每次调用前恢复、哪些参数仍共享、读回数组是否会被下一次调用覆盖。
+
+自动 reset 的返回观测可能已经属于新 episode。先保存真实终态观测，再按任务定义区分终止、时间截断和无效数据，才能解释学习目标与回放。记录逻辑世界、episode、物理时间、采样阶段和随机流；保存一个 state 数组不自动覆盖模型、控制器、随机数及外部资源。
+
+| 已发布专题 | 建议追踪的问题 |
+|---|---|
+| MuJoCo：[CPU 批量](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/cpu-batching.md) → [MJX 与设备](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/mjx-and-device-data.md) → [学习与随机化](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/learning-and-randomization.md) → [记录与回放](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/recording-and-replay.md) | 每个 worker 的 Data 怎样初始化？JAX/Warp 的状态和容量有何差异？state mask 没有保存什么？ |
+| SuperDex：[批量、学习与数据](https://github.com/huangkiki/superdex-atlas/blob/main/docs/batch-learning-data.md) | 两层 vector 如何传递 seed 和 reset？共享 Scene 的延迟读取属于哪个环境？诊断 JSON 能恢复状态吗？ |
+| Genesis：[批量、学习与数据](https://github.com/huangkiki/genesis-atlas/blob/main/docs/batch-learning-data.md) | 局部 reset 改变哪些时钟？官方 Go2 环境何时覆盖终态？记录器和轨迹回放分别拥有哪些数据？ |
+
+Newton、PhysX 和 Drake 的 E5 仍在开发；特色扩展继续由 E6 展开。这些章节建立原生机制与数据契约，没有训练、性能测量或跨后端重现结果。
 
 ## 到各引擎继续
 
