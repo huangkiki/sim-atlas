@@ -32,11 +32,11 @@ Sim Atlas · 仿真图谱是一套独立社区课程，覆盖 **MuJoCo、SuperDe
 | **[MuJoCo](https://github.com/huangkiki/mujoco-atlas)** | MJCF、`mjSpec/mjModel/mjData`、驱动器、约束与积分流水线 | [完整目录](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) · [回调与插件](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/extensions-and-callbacks.md) |
 | **[SuperDex](https://github.com/huangkiki/superdex-atlas)** | Physics / Robotics 的分工、Scene / Actor、接触几何与隐式求解 | [完整目录](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) · [材料与可微](https://github.com/huangkiki/superdex-atlas/blob/main/docs/extensions-boundaries.md) |
 | **[Genesis](https://github.com/huangkiki/genesis-atlas)** | Scene / Entity、多物理求解器、批量状态、控制与可微边界 | [完整目录](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) · [多物理与可微](https://github.com/huangkiki/genesis-atlas/blob/main/docs/extensions-boundaries.md) |
-| **[Newton Physics](https://github.com/huangkiki/newton-atlas)** | ModelBuilder / State / Control、Warp 数组、不同 Solver 的能力边界 | [完整目录](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) · [批量与数据](https://github.com/huangkiki/newton-atlas/blob/main/docs/batch-learning-data.md) |
-| **[PhysX](https://github.com/huangkiki/physx-atlas)** | C++ SDK、Scene / Actor / Shape、articulation、PGS / TGS 与宿主接入 | [完整目录](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) · [批量与数据](https://github.com/huangkiki/physx-atlas/blob/main/docs/batch-learning-data.md) |
-| **[Drake](https://github.com/huangkiki/drake-atlas)** | Systems / Diagram / Context、MultibodyPlant、SceneGraph、接触与优化 | [完整目录](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) · [批量与数据](https://github.com/huangkiki/drake-atlas/blob/main/docs/batch-lifecycle.md) |
+| **[Newton Physics](https://github.com/huangkiki/newton-atlas)** | ModelBuilder / State / Control、Warp 数组、不同 Solver 的能力边界 | [完整目录](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) · [求解、耦合与可微](https://github.com/huangkiki/newton-atlas/blob/main/docs/extensions-boundaries.md) |
+| **[PhysX](https://github.com/huangkiki/physx-atlas)** | C++ SDK、Scene / Actor / Shape、articulation、PGS / TGS 与宿主接入 | [完整目录](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) · [扩展与多物理](https://github.com/huangkiki/physx-atlas/blob/main/docs/extensions-boundaries.md) |
+| **[Drake](https://github.com/huangkiki/drake-atlas)** | Systems / Diagram / Context、MultibodyPlant、SceneGraph、接触与优化 | [完整目录](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) · [扩展与标量转换](https://github.com/huangkiki/drake-atlas/blob/main/docs/systems-extensions.md) |
 
-六个引擎均已发布建模与状态、驱动与机器人、接触与求解、传感与渲染，以及批量、学习接口与数据课程。MuJoCo、SuperDex、Genesis 还提供特色扩展与可微边界专题。各课程记录固定版本、官方源码和阅读状态；安装课程与全路线审校仍在推进。[查看交付进度](docs/progress.md)。
+六个引擎均已发布建模与状态、驱动与机器人、接触与求解、传感与渲染，以及批量、学习接口与数据课程。六仓也已提供特色扩展、多物理与可微边界专题。各课程记录固定版本、官方源码和阅读状态。**开发计划现已暂停**；完整安装课程与全路线审校保留待办，待明确恢复后继续。[查看交付进度](docs/progress.md)。
 
 ## 建立共同基础
 

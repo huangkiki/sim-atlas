@@ -110,8 +110,11 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 | MuJoCo：[回调与插件](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/extensions-and-callbacks.md) · [flex 与弹性](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/flex-and-elasticity.md) · [IPC](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/ipc-contact-mode.md) · [后端与微分](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/backends-and-differentiation.md) · [流体与源码追踪](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/multiphysics-and-source-trace.md) | 插件状态由谁拥有？材料与接触模式有哪些编译限制？有限差分、JAX 与 Warp 的状态及反向边界有何差异？ |
 | SuperDex：[材料、扩展与可微](https://github.com/huangkiki/superdex-atlas/blob/main/docs/extensions-boundaries.md) | 壳、杆、ROM 的状态和量纲是什么？隐式伴随实际解什么方程？构建开关、绑定和接触反向如何限制可用组合？ |
 | Genesis：[多物理、可微与扩展](https://github.com/huangkiki/genesis-atlas/blob/main/docs/extensions-boundaries.md) | material 怎样选择 solver？哪些材料函数被显式、隐式或外部耦合器消费？窗口重算、传感器历史和缺失反向怎样影响能力判断？ |
+| Newton Physics：[求解、耦合与可微](https://github.com/huangkiki/newton-atlas/blob/main/docs/extensions-boundaries.md) | 同一材料在不同 solver 中如何离散？MPM 如何隔离与重置？耦合迭代及 Tape 需要保存哪些状态？ |
+| PhysX：[扩展与多物理](https://github.com/huangkiki/physx-atlas/blob/main/docs/extensions-boundaries.md) | 自定义几何和约束行由谁拥有？FEM 乘子与刚体冲量如何区分？GPU buffer、stream 和 event 有哪些同步责任？ |
+| Drake：[原生扩展](https://github.com/huangkiki/drake-atlas/blob/main/docs/systems-extensions.md) · [标量与可微](https://github.com/huangkiki/drake-atlas/blob/main/docs/scalar-capabilities.md) · [特色与综合追踪](https://github.com/huangkiki/drake-atlas/blob/main/docs/engine-boundaries.md) | System 转换后 Context 怎样建立？几何、SAP 与 FEM 各支持哪些标量？优化模型和仿真图有哪些不同前提？ |
 
-Newton Physics、PhysX 和 Drake 的扩展专题正在开发，尚未计入这里的已发布覆盖。全路线安装与综合审校仍待完成；最新状态见[交付进度](progress.md)。
+六仓扩展专题均已发布。开发计划已暂停，全路线安装与综合审校保留待办；最新状态见[交付进度](progress.md)。
 
 阅读任务：从所选引擎找出一个“有入口但存在使用条件”的例子，分别写出源码版本、消费者、有效组合、状态所有者及未验证项。以上章节仅做源码与静态验证，没有进行梯度实验或物理资格测试。
 

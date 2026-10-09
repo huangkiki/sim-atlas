@@ -10,8 +10,10 @@
 | E1–E2 | 建模、状态与时间；驱动、机器人和任务接口 | 六仓已发布 |
 | E3–E4 | 接触、求解器、积分与力观测；传感器与渲染 | 六仓已发布 |
 | E5 | 批量、学习接口与数据 | 六仓已发布 |
-| E6 | 引擎特色、扩展、多物理与可微边界 | MuJoCo、SuperDex、Genesis 已发布；Newton、PhysX、Drake 开发中 |
-| E7 | A0 完整安装、两条路线逐单元审校与 DexLab 案例衔接 | 六仓待完成 |
+| E6 | 引擎特色、扩展、多物理与可微边界 | 六仓已发布 |
+| E7 | A0 完整安装、两条路线逐单元审校与 DexLab 案例衔接 | 六仓待完成；暂停，未启动 |
+
+**暂停记录（2026-10-09）：**按维护者要求完成本批 E6 后暂停开发。48 个任务中 42 项 Done、6 项 Todo、0 项 In Progress。E7 保留待办，不自动领取新任务。恢复时先核对各仓 main、未提交修改、Issue/PR 与 E2–E6 依赖；本记录不把未完成课程标为完成。
 
 特色扩展的已发布入口见[共同基础第 8 节](foundations.md)。各引擎课程目录维护具体单元的完成范围，不能把一个开发阶段替代整条路线的验收。
 
@@ -21,6 +23,6 @@
 
 [English home](../README.en.md) · [Project tracker](https://github.com/users/huangkiki/projects/2)
 
-The E codes track development slices; A0–A9 and B0–B7 organize reading. All six repositories have published E0–E5. MuJoCo, SuperDex and Genesis also have published E6 extension lessons. Newton, PhysX and Drake E6 are in development. E7, including full installation lessons and integrated unit-by-unit review, remains incomplete for all six engines.
+The E codes track development slices; A0–A9 and B0–B7 organize reading. All six repositories have published E0–E6. Development is paused at the maintainer’s request: 42 tasks are Done, 6 are Todo and none are In Progress. E7, including full installation lessons and integrated unit-by-unit review, remains incomplete and has not started. No new task will be picked up until explicitly resumed; resume by checking current branches, local changes, issues/PRs and the actual E2–E6 dependencies.
 
 Published scope means reviewed lessons, pinned source references, answered exercises and static checks. Native examples remain unexecuted unless explicitly recorded otherwise. No new experiments, training or benchmarks are part of this phase; experimental material will reuse DexLab.
