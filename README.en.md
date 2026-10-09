@@ -17,24 +17,24 @@ Sim Atlas is an independent community learning series for **MuJoCo, SuperDex, Ge
 | Objects and setup, modeling, state and time, control, robotics, sensing, batching and data. | Dynamics and data structures, stepping, contact, solvers, integration, force observation and extensions. |
 | Start with programming basics and use the shared concept map as needed. | Start with linear algebra and rigid-body mechanics, after the engine's A0–A4 foundations. |
 
-Both tracks are fully planned. All six engines now have Chinese lessons through E5: introductions, modeling/state/time, control/robotics/task interfaces, contact/solver/force observations, sensing/rendering, and batching/learning interfaces/data. E6 extensions and E7 full-track review remain in development. Planning, source review, syntax checks and executed validation have distinct statuses.
+Both tracks are fully planned. All six engines have Chinese lessons on modeling, state, control, robotics, contact, solvers, sensing, rendering, batching and data. MuJoCo, SuperDex and Genesis also have extension and differentiation lessons. Installation lessons and the integrated track review remain in development. See [delivery progress](docs/progress.md#delivery-progress) for stage details; source review, syntax checks and executed validation have distinct statuses.
 
 ## Choose an engine
 
-| Repository | Reading focus | Published scope |
+| Repository | Reading focus | Course entry |
 |---|---|---|
-| [MuJoCo Atlas](https://github.com/huangkiki/mujoco-atlas) | MJCF, model/data ownership, actuation, constraints and integration | E0–E5 · [Batching and data](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/cpu-batching.md) |
-| [SuperDex Atlas](https://github.com/huangkiki/superdex-atlas) | Physics/Robotics boundaries, Scene/Actor, contact geometry and implicit solving | E0–E5 · [Batching and data](https://github.com/huangkiki/superdex-atlas/blob/main/docs/batch-learning-data.md) |
-| [Genesis Atlas](https://github.com/huangkiki/genesis-atlas) | Scene/Entity, multiphysics, batched state and differentiability boundaries | E0–E5 · [Batching and data](https://github.com/huangkiki/genesis-atlas/blob/main/docs/batch-learning-data.md) |
-| [Newton Atlas](https://github.com/huangkiki/newton-atlas) | ModelBuilder/State/Control, Warp arrays and solver-specific support | E0–E5 · [Batching and data](https://github.com/huangkiki/newton-atlas/blob/main/docs/batch-learning-data.md) |
-| [PhysX Atlas](https://github.com/huangkiki/physx-atlas) | Native C++ SDK, articulations, PGS/TGS and host integrations | E0–E5 · [Batching and data](https://github.com/huangkiki/physx-atlas/blob/main/docs/batch-learning-data.md) |
-| [Drake Atlas](https://github.com/huangkiki/drake-atlas) | Systems/Diagram/Context, MultibodyPlant, SceneGraph, contact and optimization | E0–E5 · [Batching and data](https://github.com/huangkiki/drake-atlas/blob/main/docs/batch-lifecycle.md) |
+| [MuJoCo Atlas](https://github.com/huangkiki/mujoco-atlas) | MJCF, model/data ownership, actuation, constraints and integration | [Curriculum](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) · [Callbacks and plugins](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/extensions-and-callbacks.md) |
+| [SuperDex Atlas](https://github.com/huangkiki/superdex-atlas) | Physics/Robotics boundaries, Scene/Actor, contact geometry and implicit solving | [Curriculum](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) · [Materials and differentiation](https://github.com/huangkiki/superdex-atlas/blob/main/docs/extensions-boundaries.md) |
+| [Genesis Atlas](https://github.com/huangkiki/genesis-atlas) | Scene/Entity, multiphysics, batched state and differentiability boundaries | [Curriculum](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) · [Multiphysics and differentiation](https://github.com/huangkiki/genesis-atlas/blob/main/docs/extensions-boundaries.md) |
+| [Newton Atlas](https://github.com/huangkiki/newton-atlas) | ModelBuilder/State/Control, Warp arrays and solver-specific support | [Curriculum](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) · [Batching and data](https://github.com/huangkiki/newton-atlas/blob/main/docs/batch-learning-data.md) |
+| [PhysX Atlas](https://github.com/huangkiki/physx-atlas) | Native C++ SDK, articulations, PGS/TGS and host integrations | [Curriculum](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) · [Batching and data](https://github.com/huangkiki/physx-atlas/blob/main/docs/batch-learning-data.md) |
+| [Drake Atlas](https://github.com/huangkiki/drake-atlas) | Systems/Diagram/Context, MultibodyPlant, SceneGraph, contact and optimization | [Curriculum](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) · [Environment lifecycle](https://github.com/huangkiki/drake-atlas/blob/main/docs/batch-lifecycle.md) |
 
 Read [the learning paths](docs/learning-paths.md) for the complete unit map and [the foundations](docs/foundations.md) for shared questions about frames, inertia, state, time, contact and observations. Detailed content is currently Chinese; this English entry reports the same scope.
 
 ## Follow development and evidence
 
-[GitHub Projects](https://github.com/users/huangkiki/projects/2) manages the cross-repository queue. Engine-specific changes belong in their engine repository; navigation and shared terminology belong here. [Contributing](CONTRIBUTING.md) explains the review contract.
+[Delivery progress](docs/progress.md#delivery-progress) records published coverage. [GitHub Projects](https://github.com/users/huangkiki/projects/2) manages the cross-repository queue. Engine-specific changes belong in their engine repository; navigation and shared terminology belong here. [Contributing](CONTRIBUTING.md) explains the review contract.
 
 This phase focuses on understanding the engines. It does not add simulation campaigns, benchmarks, training or a new scoring system. Experimental lessons will reuse [DexLab](https://github.com/huangkiki/Dexlab), retaining each report's version, workload and evidence boundaries. A source-reading baseline is distinct from a tested binary or historical host version.
 

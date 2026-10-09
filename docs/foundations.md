@@ -99,7 +99,21 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 | PhysX：[批量、学习与数据](https://github.com/huangkiki/physx-atlas/blob/main/docs/batch-learning-data.md) | Scene 隔离与 Direct GPU 布局/事件怎样配合？重置应清哪些输入？序列化对象与 backing memory 由谁释放？ |
 | Drake：[环境生命周期](https://github.com/huangkiki/drake-atlas/blob/main/docs/batch-lifecycle.md) → [随机化与学习](https://github.com/huangkiki/drake-atlas/blob/main/docs/randomness-learning.md) → [日志与回放](https://github.com/huangkiki/drake-atlas/blob/main/docs/data-replay.md) | Context、Simulator 和外部资源怎样隔离？Python MonteCarlo 是否并行？logger 的时间和 trajectory 的有效域如何解释？ |
 
-六仓 E5 均已发布；特色扩展继续由 E6 展开。这些章节建立原生机制与数据契约，没有训练、性能测量或跨后端重现结果。
+六仓批量、学习接口与数据专题均已发布。这些章节建立原生机制与数据契约，没有训练、性能测量或跨后端重现结果。
+
+## 8. 扩展、多物理与可微边界 · B4 / B6 / B7
+
+判断一项能力时，沿着“公开入口 → 实际消费者 → 状态更新 → 恢复或反向路径”追踪。同名材料、存在的配置项或可构造的类，都需要继续核对实际调用者、后端和支持条件。梯度接口还要说明求导变量、离散事件、求解误差及缺失路径；有反向函数不代表整个任务处处光滑。
+
+| 已发布专题 | 建议追踪的问题 |
+|---|---|
+| MuJoCo：[回调与插件](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/extensions-and-callbacks.md) · [flex 与弹性](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/flex-and-elasticity.md) · [IPC](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/ipc-contact-mode.md) · [后端与微分](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/backends-and-differentiation.md) · [流体与源码追踪](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/multiphysics-and-source-trace.md) | 插件状态由谁拥有？材料与接触模式有哪些编译限制？有限差分、JAX 与 Warp 的状态及反向边界有何差异？ |
+| SuperDex：[材料、扩展与可微](https://github.com/huangkiki/superdex-atlas/blob/main/docs/extensions-boundaries.md) | 壳、杆、ROM 的状态和量纲是什么？隐式伴随实际解什么方程？构建开关、绑定和接触反向如何限制可用组合？ |
+| Genesis：[多物理、可微与扩展](https://github.com/huangkiki/genesis-atlas/blob/main/docs/extensions-boundaries.md) | material 怎样选择 solver？哪些材料函数被显式、隐式或外部耦合器消费？窗口重算、传感器历史和缺失反向怎样影响能力判断？ |
+
+Newton Physics、PhysX 和 Drake 的扩展专题正在开发，尚未计入这里的已发布覆盖。全路线安装与综合审校仍待完成；最新状态见[交付进度](progress.md)。
+
+阅读任务：从所选引擎找出一个“有入口但存在使用条件”的例子，分别写出源码版本、消费者、有效组合、状态所有者及未验证项。以上章节仅做源码与静态验证，没有进行梯度实验或物理资格测试。
 
 ## 到各引擎继续
 

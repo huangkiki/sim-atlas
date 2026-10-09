@@ -29,14 +29,14 @@ Sim Atlas · 仿真图谱是一套独立社区课程，覆盖 **MuJoCo、SuperDe
 
 | 引擎 | 原生学习重点 | 课程入口 |
 |---|---|---|
-| **[MuJoCo](https://github.com/huangkiki/mujoco-atlas)** | MJCF、`mjSpec/mjModel/mjData`、驱动器、约束与积分流水线 | [完整目录](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) · [E5 批量与数据](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/cpu-batching.md) |
-| **[SuperDex](https://github.com/huangkiki/superdex-atlas)** | Physics / Robotics 的分工、Scene / Actor、接触几何与隐式求解 | [完整目录](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) · [E5 批量与数据](https://github.com/huangkiki/superdex-atlas/blob/main/docs/batch-learning-data.md) |
-| **[Genesis](https://github.com/huangkiki/genesis-atlas)** | Scene / Entity、多物理求解器、批量状态、控制与可微边界 | [完整目录](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) · [E5 批量与数据](https://github.com/huangkiki/genesis-atlas/blob/main/docs/batch-learning-data.md) |
-| **[Newton Physics](https://github.com/huangkiki/newton-atlas)** | ModelBuilder / State / Control、Warp 数组、不同 Solver 的能力边界 | [完整目录](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) · [E5 批量与数据](https://github.com/huangkiki/newton-atlas/blob/main/docs/batch-learning-data.md) |
-| **[PhysX](https://github.com/huangkiki/physx-atlas)** | C++ SDK、Scene / Actor / Shape、articulation、PGS / TGS 与宿主接入 | [完整目录](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) · [E5 批量与数据](https://github.com/huangkiki/physx-atlas/blob/main/docs/batch-learning-data.md) |
-| **[Drake](https://github.com/huangkiki/drake-atlas)** | Systems / Diagram / Context、MultibodyPlant、SceneGraph、接触与优化 | [完整目录](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) · [E5 批量与数据](https://github.com/huangkiki/drake-atlas/blob/main/docs/batch-lifecycle.md) |
+| **[MuJoCo](https://github.com/huangkiki/mujoco-atlas)** | MJCF、`mjSpec/mjModel/mjData`、驱动器、约束与积分流水线 | [完整目录](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) · [回调与插件](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/extensions-and-callbacks.md) |
+| **[SuperDex](https://github.com/huangkiki/superdex-atlas)** | Physics / Robotics 的分工、Scene / Actor、接触几何与隐式求解 | [完整目录](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) · [材料与可微](https://github.com/huangkiki/superdex-atlas/blob/main/docs/extensions-boundaries.md) |
+| **[Genesis](https://github.com/huangkiki/genesis-atlas)** | Scene / Entity、多物理求解器、批量状态、控制与可微边界 | [完整目录](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) · [多物理与可微](https://github.com/huangkiki/genesis-atlas/blob/main/docs/extensions-boundaries.md) |
+| **[Newton Physics](https://github.com/huangkiki/newton-atlas)** | ModelBuilder / State / Control、Warp 数组、不同 Solver 的能力边界 | [完整目录](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) · [批量与数据](https://github.com/huangkiki/newton-atlas/blob/main/docs/batch-learning-data.md) |
+| **[PhysX](https://github.com/huangkiki/physx-atlas)** | C++ SDK、Scene / Actor / Shape、articulation、PGS / TGS 与宿主接入 | [完整目录](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) · [批量与数据](https://github.com/huangkiki/physx-atlas/blob/main/docs/batch-learning-data.md) |
+| **[Drake](https://github.com/huangkiki/drake-atlas)** | Systems / Diagram / Context、MultibodyPlant、SceneGraph、接触与优化 | [完整目录](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) · [批量与数据](https://github.com/huangkiki/drake-atlas/blob/main/docs/batch-lifecycle.md) |
 
-六个引擎均已发布 E0–E5：导读、建模与状态、驱动与机器人、接触与求解、传感与渲染，以及批量、学习接口与数据专题。各引擎入口包含固定版本、官方源码与阅读状态。教程的源码版本、安装包身份和 DexLab 实测版本分别记录。
+六个引擎均已发布建模与状态、驱动与机器人、接触与求解、传感与渲染，以及批量、学习接口与数据课程。MuJoCo、SuperDex、Genesis 还提供特色扩展与可微边界专题。各课程记录固定版本、官方源码和阅读状态；安装课程与全路线审校仍在推进。[查看交付进度](docs/progress.md)。
 
 ## 建立共同基础
 
@@ -53,17 +53,9 @@ Sim Atlas · 仿真图谱是一套独立社区课程，覆盖 **MuJoCo、SuperDe
 
 ## 学习进度与参与方式
 
-目前六仓均已发布 E0–E5；特色扩展及双路线审校继续推进。**“路线完整规划”与“章节已经完成”分别标注。** 示例逐项说明源码核对、语法检查和实际执行状态。
+课程目录分别标注已交付内容和待开发单元。示例也分别记录源码核对、语法检查和实际执行状态，便于选择合适的阅读起点。
 
-| 阶段 | 交付内容 |
-|---|---|
-| E0 | 导读、双路线目录、固定源码地图 |
-| E1–E2 | 建模、状态与时间；驱动、机器人和任务接口 |
-| E3–E4 | 接触、求解器、积分与力观测；传感器与渲染 |
-| E5–E6 | 批量、学习接口与数据；引擎特色、扩展与限制 |
-| E7 | 两条路线逐单元审校、来源核对与 DexLab 案例衔接 |
-
-[开发看板](https://github.com/users/huangkiki/projects/2/views/2) · [课程任务表](https://github.com/users/huangkiki/projects/2/views/3) · [如何贡献](CONTRIBUTING.md)
+[课程交付进度](docs/progress.md) · [开发看板](https://github.com/users/huangkiki/projects/2/views/2) · [课程任务表](https://github.com/users/huangkiki/projects/2/views/3) · [如何贡献](CONTRIBUTING.md)
 
 引擎专题的修改和问题在对应仓库讨论；本仓维护导航、共同术语与课程衔接。每交付一项，核对当前提交的内容与检查结果，重新审视剩余依赖，再决定下一项。
 
