@@ -29,14 +29,14 @@ Sim Atlas · 仿真图谱是一套独立社区课程，覆盖 **MuJoCo、SuperDe
 
 | 引擎 | 原生学习重点 | 课程入口 |
 |---|---|---|
-| **[MuJoCo](https://github.com/huangkiki/mujoco-atlas)** | MJCF、`mjSpec/mjModel/mjData`、驱动器、约束与积分流水线 | [完整目录](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) · [E3 接触与求解](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/dynamics-and-pipeline.md) |
-| **[SuperDex](https://github.com/huangkiki/superdex-atlas)** | Physics / Robotics 的分工、Scene / Actor、接触几何与隐式求解 | [完整目录](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) · [E3 接触与求解](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) |
-| **[Genesis](https://github.com/huangkiki/genesis-atlas)** | Scene / Entity、多物理求解器、批量状态、控制与可微边界 | [完整目录](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) · [E3 接触与求解](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) |
+| **[MuJoCo](https://github.com/huangkiki/mujoco-atlas)** | MJCF、`mjSpec/mjModel/mjData`、驱动器、约束与积分流水线 | [完整目录](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) · [E4 传感与采样](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/sensors-and-sampling.md) |
+| **[SuperDex](https://github.com/huangkiki/superdex-atlas)** | Physics / Robotics 的分工、Scene / Actor、接触几何与隐式求解 | [完整目录](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) · [E4 传感与渲染](https://github.com/huangkiki/superdex-atlas/blob/main/docs/sensors-rendering.md) |
+| **[Genesis](https://github.com/huangkiki/genesis-atlas)** | Scene / Entity、多物理求解器、批量状态、控制与可微边界 | [完整目录](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) · [E4 传感与渲染](https://github.com/huangkiki/genesis-atlas/blob/main/docs/sensors-rendering.md) |
 | **[Newton Physics](https://github.com/huangkiki/newton-atlas)** | ModelBuilder / State / Control、Warp 数组、不同 Solver 的能力边界 | [完整目录](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) · [E3 接触与求解](https://github.com/huangkiki/newton-atlas/blob/main/docs/contact-solvers-forces.md) |
 | **[PhysX](https://github.com/huangkiki/physx-atlas)** | C++ SDK、Scene / Actor / Shape、articulation、PGS / TGS 与宿主接入 | [完整目录](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) · [E3 接触与求解](https://github.com/huangkiki/physx-atlas/blob/main/docs/contact-solvers.md) |
 | **[Drake](https://github.com/huangkiki/drake-atlas)** | Systems / Diagram / Context、MultibodyPlant、SceneGraph、接触与优化 | [完整目录](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) · [E3 接触与求解](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-models.md) |
 
-六个引擎均已发布 E0–E3：导读、建模与状态、驱动与机器人、接触与求解。各引擎入口包含固定版本、官方源码与阅读状态。教程的源码版本、安装包身份和 DexLab 实测版本分别记录。
+六个引擎均已发布 E0–E3：导读、建模与状态、驱动与机器人、接触与求解；MuJoCo、SuperDex、Genesis 还已发布 E4 传感与渲染。各引擎入口包含固定版本、官方源码与阅读状态。教程的源码版本、安装包身份和 DexLab 实测版本分别记录。
 
 ## 建立共同基础
 
@@ -53,7 +53,7 @@ Sim Atlas · 仿真图谱是一套独立社区课程，覆盖 **MuJoCo、SuperDe
 
 ## 学习进度与参与方式
 
-目前六仓均已发布 E0 导读与源码地图、E1 建模/状态/时间、E2 驱动/机器人/任务接口、E3 接触/求解/力观测；E4–E7 继续开发。**“路线完整规划”与“章节已经完成”分别标注。** 示例逐项说明源码核对、语法检查和实际执行状态。
+目前六仓均已发布 E0–E3，MuJoCo、SuperDex、Genesis 的 E4 传感与渲染也已交付；其余三仓 E4 及六仓 E5–E7 继续开发。**“路线完整规划”与“章节已经完成”分别标注。** 示例逐项说明源码核对、语法检查和实际执行状态。
 
 | 阶段 | 交付内容 |
 |---|---|

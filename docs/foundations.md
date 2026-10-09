@@ -71,7 +71,15 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 | PhysX | [CPU PGS/TGS 与积分](https://github.com/huangkiki/physx-atlas/blob/main/docs/contact-solvers.md) | [材料、法向点与切向 anchor](https://github.com/huangkiki/physx-atlas/blob/main/docs/contact-solvers.md) |
 | Drake | [动力学装配与 SAP](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-solvers.md) | [几何材料](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-models.md) · [力与采样](https://github.com/huangkiki/drake-atlas/blob/main/docs/contact-observation.md) |
 
-六仓 E3 专题均已发布，后续传感、数据与扩展专题仍按各仓目录推进。以上链接用于对照原生机制，不能组成性能或物理准确性排名。
+六仓 E3 专题均已发布。以上链接用于对照原生机制，不能组成性能或物理准确性排名。
+
+传感与图像的深入阅读已在三个引擎展开：
+
+- **MuJoCo：**[传感与采样](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/sensors-and-sampling.md) → [相机与几何查询](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/cameras-and-geometry-queries.md) → [渲染与 viewer](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/rendering-and-viewer.md)。从输出块和采样阶段理解 history，再区分投影、射线、像素及窗口资源。
+- **SuperDex：**[传感器、渲染与可视化](https://github.com/huangkiki/superdex-atlas/blob/main/docs/sensors-rendering.md)。区分相机元数据、物理查询与图像宿主，追踪 RGBA、读回缓存和帧延迟。
+- **Genesis：**[传感器、渲染与可视化](https://github.com/huangkiki/genesis-atlas/blob/main/docs/sensors-rendering.md)。区分普通传感器与相机缓存，理解轴向深度、射线距离、分割映射及触觉感知模型。
+
+阅读任务：为一项观测分别写下产生者、采样时间、坐标、单位、shape 和无效值，再解释为何一个 RGB 图像、接触力数组和当前关节状态可能并非同一时刻的观测。其余三仓 E4 及数据、扩展专题仍按各仓目录推进；已有示例仅做源码与静态检查。
 
 ## 到各引擎继续
 
