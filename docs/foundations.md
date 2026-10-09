@@ -73,13 +73,16 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 
 六仓 E3 专题均已发布。以上链接用于对照原生机制，不能组成性能或物理准确性排名。
 
-传感与图像的深入阅读已在三个引擎展开：
+六个引擎的传感、查询与图像专题均已展开：
 
 - **MuJoCo：**[传感与采样](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/sensors-and-sampling.md) → [相机与几何查询](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/cameras-and-geometry-queries.md) → [渲染与 viewer](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/rendering-and-viewer.md)。从输出块和采样阶段理解 history，再区分投影、射线、像素及窗口资源。
 - **SuperDex：**[传感器、渲染与可视化](https://github.com/huangkiki/superdex-atlas/blob/main/docs/sensors-rendering.md)。区分相机元数据、物理查询与图像宿主，追踪 RGBA、读回缓存和帧延迟。
 - **Genesis：**[传感器、渲染与可视化](https://github.com/huangkiki/genesis-atlas/blob/main/docs/sensors-rendering.md)。区分普通传感器与相机缓存，理解轴向深度、射线距离、分割映射及触觉感知模型。
+- **Newton Physics：**[传感、查询与渲染](https://github.com/huangkiki/newton-atlas/blob/main/docs/sensors-rendering.md)。追踪观测存储与加速度产生者，区分共享几何树、相机通道及 viewer 的数据生命周期。
+- **PhysX：**[传感、场景查询与调试显示](https://github.com/huangkiki/physx-atlas/blob/main/docs/sensors-rendering.md)。理解过滤、最近命中与多命中完整性，再区分力和加速度、调试图元以及宿主图像管线。
+- **Drake：**[相机与渲染](https://github.com/huangkiki/drake-atlas/blob/main/docs/sensors-rendering.md) → [采样与延迟](https://github.com/huangkiki/drake-atlas/blob/main/docs/sensor-timing.md) → [惯性与力传感](https://github.com/huangkiki/drake-atlas/blob/main/docs/inertial-force-sensing.md)。沿系统端口追踪图像、捕获位姿和时间，再核对动力学输入的采样阶段。
 
-阅读任务：为一项观测分别写下产生者、采样时间、坐标、单位、shape 和无效值，再解释为何一个 RGB 图像、接触力数组和当前关节状态可能并非同一时刻的观测。其余三仓 E4 及数据、扩展专题仍按各仓目录推进；已有示例仅做源码与静态检查。
+阅读任务：为一项观测分别写下产生者、采样时间、坐标、单位、shape 和无效值，再解释为何一个 RGB 图像、接触力数组和当前关节状态可能并非同一时刻的观测。批量与学习、数据和特色扩展专题仍按各仓目录推进；已有示例仅做源码与静态检查。
 
 ## 到各引擎继续
 
