@@ -60,6 +60,15 @@ $$I_O=I_C+m\big((r^Tr)\mathbf{1}-rr^T\big).$$
 
 阅读任务：从一个读回接口向上追踪生产者，判断它对应积分前、积分后、上一内部阶段还是某个平均窗口。然后进入 [DexLab 案例入口](dexlab.md)，核对报告是否具备你需要的版本与工况。
 
+已发布的深入阅读：
+
+| 从哪个问题进入 | MuJoCo | SuperDex | Genesis |
+|---|---|---|---|
+| 一步动力学和数值迭代 | [流水线](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/dynamics-and-pipeline.md) · [求解与积分](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/solvers-and-integration.md) | [隐式积分与求解](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) | [约束求解与积分](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) |
+| 材料组合与力的读回 | [接触模型](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/contact-models.md) · [力观测](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/force-observations.md) | [接触、材料与 query](https://github.com/huangkiki/superdex-atlas/blob/main/docs/contact-solvers-forces.md) | [接触、材料与采样](https://github.com/huangkiki/genesis-atlas/blob/main/docs/contact-solvers-forces.md) |
+
+Newton Physics、PhysX、Drake 的对应 E3 专题仍在开发；六仓目录持续记录各自进度。以上链接用于对照原生机制，不能组成性能或物理准确性排名。
+
 ## 到各引擎继续
 
 [MuJoCo 课程](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) · [SuperDex 课程](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) · [Genesis 课程](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) · [Newton 课程](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) · [PhysX 课程](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) · [Drake 课程](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md)
