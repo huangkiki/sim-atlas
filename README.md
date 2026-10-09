@@ -29,12 +29,12 @@ Sim Atlas · 仿真图谱是一套独立社区课程，覆盖 **MuJoCo、SuperDe
 
 | 引擎 | 从这些内容进入 | 阅读入口 | 已发布范围 |
 |---|---|---|---|
-| **MuJoCo** | MJCF、`mjSpec/mjModel/mjData`、驱动器、约束与积分流水线 | [开始阅读](https://github.com/huangkiki/mujoco-atlas) · [双路线目录](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) | E0 导读与固定源码地图 |
-| **SuperDex** | Physics / Robotics 的分工、Scene / Actor、接触几何与隐式求解 | [开始阅读](https://github.com/huangkiki/superdex-atlas) · [双路线目录](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) | E0 导读与固定源码地图 |
-| **Genesis** | Scene / Entity、多物理求解器、批量状态、控制与可微边界 | [开始阅读](https://github.com/huangkiki/genesis-atlas) · [双路线目录](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) | E0 导读与固定源码地图 |
-| **Newton Physics** | ModelBuilder / State / Control、Warp 数组、不同 Solver 的能力边界 | [开始阅读](https://github.com/huangkiki/newton-atlas) · [双路线目录](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) | E0 导读与固定源码地图 |
-| **PhysX** | C++ SDK、Scene / Actor / Shape、articulation、PGS / TGS 与宿主接入 | [开始阅读](https://github.com/huangkiki/physx-atlas) · [双路线目录](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) | E0 导读与固定源码地图 |
-| **Drake** | Systems / Diagram / Context、MultibodyPlant、SceneGraph、接触与优化 | [开始阅读](https://github.com/huangkiki/drake-atlas) · [双路线目录](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) | E0 导读与固定源码地图 |
+| **MuJoCo** | MJCF、`mjSpec/mjModel/mjData`、驱动器、约束与积分流水线 | [开始阅读](https://github.com/huangkiki/mujoco-atlas) · [双路线目录](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/curriculum.md) | E0 导读 + [E1 建模、状态与时间](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/modeling-and-frames.md) |
+| **SuperDex** | Physics / Robotics 的分工、Scene / Actor、接触几何与隐式求解 | [开始阅读](https://github.com/huangkiki/superdex-atlas) · [双路线目录](https://github.com/huangkiki/superdex-atlas/blob/main/docs/curriculum.md) | E0 导读 + [E1 建模、状态与时间](https://github.com/huangkiki/superdex-atlas/blob/main/docs/modeling-state-time.md) |
+| **Genesis** | Scene / Entity、多物理求解器、批量状态、控制与可微边界 | [开始阅读](https://github.com/huangkiki/genesis-atlas) · [双路线目录](https://github.com/huangkiki/genesis-atlas/blob/main/docs/curriculum.md) | E0 导读 + [E1 建模、状态与时间](https://github.com/huangkiki/genesis-atlas/blob/main/docs/modeling-state-time.md) |
+| **Newton Physics** | ModelBuilder / State / Control、Warp 数组、不同 Solver 的能力边界 | [开始阅读](https://github.com/huangkiki/newton-atlas) · [双路线目录](https://github.com/huangkiki/newton-atlas/blob/main/docs/curriculum.md) | E0 导读 + [E1 建模、状态与时间](https://github.com/huangkiki/newton-atlas/blob/main/docs/modeling-state-time.md) |
+| **PhysX** | C++ SDK、Scene / Actor / Shape、articulation、PGS / TGS 与宿主接入 | [开始阅读](https://github.com/huangkiki/physx-atlas) · [双路线目录](https://github.com/huangkiki/physx-atlas/blob/main/docs/curriculum.md) | E0 导读 + [E1 建模、状态与时间](https://github.com/huangkiki/physx-atlas/blob/main/docs/modeling-state-time.md) |
+| **Drake** | Systems / Diagram / Context、MultibodyPlant、SceneGraph、接触与优化 | [开始阅读](https://github.com/huangkiki/drake-atlas) · [双路线目录](https://github.com/huangkiki/drake-atlas/blob/main/docs/curriculum.md) | E0 导读 + [E1 建模、状态与时间](https://github.com/huangkiki/drake-atlas/blob/main/docs/modeling-state-time.md) |
 
 各引擎入口包含固定版本、官方源码与阅读状态。教程的源码版本、安装包身份和 DexLab 实测版本分别记录。
 
@@ -53,7 +53,7 @@ Sim Atlas · 仿真图谱是一套独立社区课程，覆盖 **MuJoCo、SuperDe
 
 ## 学习进度与参与方式
 
-目前已发布六仓首篇导读、固定源码地图和完整课程规划；深入专题正在逐项开发。**“路线完整规划”与“章节已经完成”分别标注。** 示例逐项说明源码核对、语法检查和实际执行状态。
+目前已发布六仓 E0 导读与源码地图、E1 建模/状态/时间专题；E2–E7 正在逐项开发。**“路线完整规划”与“章节已经完成”分别标注。** 示例逐项说明源码核对、语法检查和实际执行状态。
 
 | 阶段 | 交付内容 |
 |---|---|

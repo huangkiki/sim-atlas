@@ -17,18 +17,18 @@ Sim Atlas is an independent community learning series for **MuJoCo, SuperDex, Ge
 | Objects and setup, modeling, state and time, control, robotics, sensing, batching and data. | Dynamics and data structures, stepping, contact, solvers, integration, force observation and extensions. |
 | Start with programming basics and use the shared concept map as needed. | Start with linear algebra and rigid-body mechanics, after the engine's A0–A4 foundations. |
 
-Both tracks are fully planned. Published introductory guides are available in Chinese; detailed lessons are being delivered incrementally. Planning, source review, syntax checks and executed validation have distinct statuses.
+Both tracks are fully planned. E0 introductions and E1 modeling/state/time lessons are published in Chinese; E2–E7 remain in development. Planning, source review, syntax checks and executed validation have distinct statuses.
 
 ## Choose an engine
 
 | Repository | Reading focus | Published scope |
 |---|---|---|
-| [MuJoCo Atlas](https://github.com/huangkiki/mujoco-atlas) | MJCF, model/data ownership, actuation, constraints and integration | E0 introduction and pinned source map |
-| [SuperDex Atlas](https://github.com/huangkiki/superdex-atlas) | Physics/Robotics boundaries, Scene/Actor, contact geometry and implicit solving | E0 introduction and pinned source map |
-| [Genesis Atlas](https://github.com/huangkiki/genesis-atlas) | Scene/Entity, multiphysics, batched state and differentiability boundaries | E0 introduction and pinned source map |
-| [Newton Atlas](https://github.com/huangkiki/newton-atlas) | ModelBuilder/State/Control, Warp arrays and solver-specific support | E0 introduction and pinned source map |
-| [PhysX Atlas](https://github.com/huangkiki/physx-atlas) | Native C++ SDK, articulations, PGS/TGS and host integrations | E0 introduction and pinned source map |
-| [Drake Atlas](https://github.com/huangkiki/drake-atlas) | Systems/Diagram/Context, MultibodyPlant, SceneGraph, contact and optimization | E0 introduction and pinned source map |
+| [MuJoCo Atlas](https://github.com/huangkiki/mujoco-atlas) | MJCF, model/data ownership, actuation, constraints and integration | E0 introduction + [E1 modeling, state and time](https://github.com/huangkiki/mujoco-atlas/blob/main/docs/modeling-and-frames.md) |
+| [SuperDex Atlas](https://github.com/huangkiki/superdex-atlas) | Physics/Robotics boundaries, Scene/Actor, contact geometry and implicit solving | E0 introduction + [E1 modeling, state and time](https://github.com/huangkiki/superdex-atlas/blob/main/docs/modeling-state-time.md) |
+| [Genesis Atlas](https://github.com/huangkiki/genesis-atlas) | Scene/Entity, multiphysics, batched state and differentiability boundaries | E0 introduction + [E1 modeling, state and time](https://github.com/huangkiki/genesis-atlas/blob/main/docs/modeling-state-time.md) |
+| [Newton Atlas](https://github.com/huangkiki/newton-atlas) | ModelBuilder/State/Control, Warp arrays and solver-specific support | E0 introduction + [E1 modeling, state and time](https://github.com/huangkiki/newton-atlas/blob/main/docs/modeling-state-time.md) |
+| [PhysX Atlas](https://github.com/huangkiki/physx-atlas) | Native C++ SDK, articulations, PGS/TGS and host integrations | E0 introduction + [E1 modeling, state and time](https://github.com/huangkiki/physx-atlas/blob/main/docs/modeling-state-time.md) |
+| [Drake Atlas](https://github.com/huangkiki/drake-atlas) | Systems/Diagram/Context, MultibodyPlant, SceneGraph, contact and optimization | E0 introduction + [E1 modeling, state and time](https://github.com/huangkiki/drake-atlas/blob/main/docs/modeling-state-time.md) |
 
 Read [the learning paths](docs/learning-paths.md) for the complete unit map and [the foundations](docs/foundations.md) for shared questions about frames, inertia, state, time, contact and observations. Detailed content is currently Chinese; this English entry reports the same scope.
 
